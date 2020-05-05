@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  font-family: monospace;
+  background-color: plum;
+}
+
+#drink-header {
+  display: flex;
+  justify-content: center;
+  background: black;
+  opacity: 25;
+  height: 12rem;
+  padding: 1rem;
+}
+
+#drink-header img {
+  height: 13rem;
+  width: auto;
+}
+
+#drink-collection {
+  margin: 2rem;
+}
+
+.card {
+  text-align: center;
+  border: grey solid 1px;
+  padding: 1rem;
+  width: 15rem;
+  height: 25rem;
+  display: inline-grid;
+  margin: 1rem 2rem;
+  box-shadow: 3px 4px rgb(116, 4, 160);
+}
+
+.drink-avatar {
+  justify-self: center;
+  height: 12rem;
+  width: auto;
+}
+
+button {
+  position: relative;
+  background-color: rgb(224, 64, 224);
+  border: none;
+  border-radius: 5px;
+  height: 3rem;
+  width: max-content;
+  color: whitesmoke;
+  font-size: 18px;
+  justify-self: center;
+}
+
+
+
+.container {
+  padding: 1rem;
+  width: stretch;
+  height: auto;
+  display: none;
+  background: rgba(0, 2, 10, 0.87);
+  opacity: .8;
+}
+
+
