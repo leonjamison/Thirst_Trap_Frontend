@@ -7,8 +7,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
 
 
 renderDrinks()
-// getReviewObj()
-    
+
 
 
     
@@ -29,6 +28,7 @@ document.addEventListener('click', (e)=>{
 
 
 })
+
 
 
 
