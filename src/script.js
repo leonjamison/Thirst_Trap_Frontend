@@ -5,11 +5,6 @@ document.addEventListener('DOMContentLoaded', ()=> {
 
 
 renderDrinks()
-    
-
-
-
-
 })
 
 function renderDrinks(){
