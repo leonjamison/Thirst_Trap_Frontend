@@ -68,8 +68,6 @@ function viewDrinks(drink){
    
 }
 
-
-
 function redirect(id){
      window.location.href=
      `file:///Users/juliusjamison/Desktop/Thirst_Trap_Frontend/Thirst_Trap_Frontend/drink.${id}.html`
