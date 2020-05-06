@@ -1,4 +1,6 @@
 const endPoint = `http://localhost:3000/drinks`
+const pic = document.getElementsByClassName('drink-avatar')
+// console.log(pic)
 // const reviewUrl = `http://localhost:3000/`
 
 
@@ -29,6 +31,8 @@ document.addEventListener('click', (e)=>{
 
 
 })
+
+
 
 
 
