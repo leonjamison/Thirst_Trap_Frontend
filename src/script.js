@@ -9,8 +9,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
 
 
 renderDrinks()
-// getReviewObj()
-    
+
 
 
     
@@ -31,7 +30,6 @@ document.addEventListener('click', (e)=>{
 
 
 })
-
 
 
 
@@ -69,9 +67,6 @@ function viewDrinks(drink){
     div.append(drinkDiv)
    
 }
-
-
-
 
 function redirect(id){
      window.location.href=

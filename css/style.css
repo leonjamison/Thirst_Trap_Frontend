@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: monospace;
-  background-color: plum;
+  background-color:plum;
 }
 
 #drink-header {
@@ -39,7 +39,7 @@ body {
   /* max-height: 24rem; */
   display: inline-block;
   margin: 1rem 2rem;
-  box-shadow: 3px 4px rgb(116, 4, 160);
+  box-shadow: 3px 4px rgb(169, 131, 184);
 }
 
 .drink-avatar {
