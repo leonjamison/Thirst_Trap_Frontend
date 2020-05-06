@@ -1,5 +1,5 @@
 const endPoint = `http://localhost:3000/drinks`
-const reviewUrl = `http://localhost:3000/reviews`
+// const reviewUrl = `http://localhost:3000/`
 
 
 
@@ -7,12 +7,28 @@ document.addEventListener('DOMContentLoaded', ()=> {
 
 
 renderDrinks()
-getReviewObj()
+// getReviewObj()
     
 
 
     
+document.addEventListener('click', (e)=>{
 
+    if(e.target.className === 'like-btn' ){
+        let likeBtn = e.target
+        let likes = parseInt(likeBtn.textContent[0])
+        likeBtn.textContent = `${likes + 1} Likes ♥`
+    }else if(e.target.className === 'drink-avatar'){
+        e.preventDefault()
+        // console.log(e.target)
+        let p = e.target.parentNode 
+        let id = p.parentNode.dataset.id
+        redirect(id)
+
+    }
+
+
+})
 
 
 
@@ -31,6 +47,8 @@ function renderDrinks(){
 }
 
 
+
+
 function viewDrinks(drink){
     // console.log(drink)
     let div = document.getElementById('drink-collection')
@@ -41,51 +59,21 @@ function viewDrinks(drink){
     <div style="display: table-cell;" class='card'>
     <h2>${drink.name}</h2>
     <img src=${drink.img_url} class="drink-avatar" />
-    <button class="like-btn">0 Likes</button> 
+    <button class="like-btn">0 Likes ♥ </button> 
     </div>
     `
     div.append(drinkDiv)
-}
-
-function getReviewObj(){
-    fetch(reviewUrl)
-    .then(resp => resp.json())
-    .then(reviews => reviews.forEach((review)=>{
-        addLikes(review)
-    }) )
-
-
-}
-
-function addLikes(review){
-    console.log(review)
-
-    // document.addEventListener('click', (e)=>{
-
-    //     // if(e.target.className === 'like-btn' ){
-    //     //     console.log(likes.likes)
-            
-    //     //     let likeBtn = e.target
-    //     //     // debugger
-    //     //     // // console.log(likeBtn.textContent[0])
-    //     //     likeBtn.textContent = `${likes.likes} Likes`
-    //     //     // let likes = parseInt(likeBtn.textContent[0])
-
-
-    //     //     // likeBtn.textContent = `${likes.likes} likes`
-           
-    //     //     // console.log(likeBtn)
-            
-    //     // }
-
-
-    // })
-
+   
 }
 
 
 
 
+function redirect(id){
+     window.location.href=
+     `file:///Users/juliusjamison/Desktop/Thirst_Trap_Frontend/Thirst_Trap_Frontend/drink.${id}.html`
+
+}
 
 
 // `
