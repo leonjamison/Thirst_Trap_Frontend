@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: monospace;
-  background-color: rgb(141, 226, 215);
+  background-color: plum;
 }
 
 #drink-header {
@@ -50,30 +50,14 @@ body {
 
 button {
   position: relative;
-<<<<<<< HEAD
-  background-color: rgb(228, 181, 228);
-  border: none;
-  border-radius: 5px;
-=======
   background-color: palevioletred;
   border: black solid;
   border-radius: 1px;
->>>>>>> 52755cff9ffc45f7b0416333ff13cd5c214519f1
   height: 3rem;
   width: max-content;
   color: black;
   font-size: 18px;
   justify-self: center;
-}
-#profile {
-  background-color: beige;
-  font-size: medium;
-  position: absolute;
-  width: auto;
-  float: right;
-  font-style: oblique;
-  font-family: sans-serif;
-  color: rgba(0, 0, 0, 0.39);
 }
 
 
