@@ -1,4 +1,6 @@
 const endPoint = `http://localhost:3000/drinks`
+const pic = document.getElementsByClassName('drink-avatar')
+// console.log(pic)
 // const reviewUrl = `http://localhost:3000/`
 
 
@@ -65,9 +67,6 @@ function viewDrinks(drink){
     div.append(drinkDiv)
    
 }
-
-
-
 
 function redirect(id){
      window.location.href=
