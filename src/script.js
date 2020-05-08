@@ -45,7 +45,7 @@ renderDrinks()
             viewDrinks(drink)
         }))
     }
-
+    
     function viewDrinks(drink){
         // console.log(drink)
         let div = document.getElementById('drink-collection')
