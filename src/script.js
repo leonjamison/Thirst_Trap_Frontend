@@ -12,6 +12,10 @@ renderDrinks()
 
 
 
+
+// window.onload = function() {
+//     document.getElementById("my_audio").play();
+// }
     
 document.addEventListener('click', (e)=>{
 
@@ -19,6 +23,19 @@ document.addEventListener('click', (e)=>{
         let likeBtn = e.target
         let likes = parseInt(likeBtn.textContent[0])
         likeBtn.textContent = `${likes + 1} Likes ♥`
+        // likePics()
+        fetch("http://localhost:3000/drinks", {
+            method: 'PATCH',
+            headers: 
+            {
+                'content-type': 'application/json',
+                'accept': 'application/json'
+            },
+            body: JSON.stringify({
+                likes
+            })
+        })
+        
     }else if(e.target.className === 'drink-avatar'){
         e.preventDefault()
         // console.log(e.target)
@@ -74,15 +91,25 @@ function redirect(id){
 
 }
 
+// function likePics(){
+    
+    // fetch("http://localhost:3000/drinks", {
+    //     method: 'PATCH',
+    //     headers: 
+    //     {
+    //         'content-type': 'application/json',
+    //         'accept': 'application/json'
+    //     },
+    //     body: JSON.stringify({
+    //         likes
+    //     })
+    // })
+   
 
-// `
-// <div class = 'card'>
-// <h2>${drink.name}</h2>
-// <img src=${drink.image_url} class="drink-avatar" />
-// {/* <p>${drink.likes} Likes </p> */}
-
-// </div>
-// `
 
 
-// may have to add likes to seed data?
+// }
+
+
+
+
