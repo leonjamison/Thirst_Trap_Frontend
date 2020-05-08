@@ -66,7 +66,7 @@ renderDrinks()
 
     function redirect(id){
         window.location.href =
-        `/Users/congma/Development/code/js/Thirst_Trap_Frontend/drink.${id}.html`
+        `file:///Users/juliusjamison/Desktop/Thirst_Trap_Frontend/Thirst_Trap_Frontend/drink.${id}.html`
 
     }
 

@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     })
     
     function renderDrink(){
-        fetch(`http://localhost:3000/drinks/28`)
+        fetch(`http://localhost:3000/drinks/18`)
         .then(resp => resp.json())
         .then(drink => viewDrink(drink))
     

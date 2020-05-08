@@ -11,7 +11,7 @@ addComment()
 })
 
 function renderDrink(){
-    fetch(`http://localhost:3000/drinks/21`)
+    fetch(`http://localhost:3000/drinks/11`)
     .then(resp => resp.json())
     .then(drink => viewDrink(drink))
 

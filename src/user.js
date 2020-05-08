@@ -1,4 +1,4 @@
-const endPoint = `http://localhost:3000/users/1`
+const endPoint = `http://localhost:3000/users/9`
 
 
 
@@ -20,7 +20,7 @@ function getUser(){
 
 function createUser(user){
     let div = document.getElementsByClassName('user-profile')[0]
-    console.log(div)
+    // console.log(div)
     let userDiv = document.createElement('div')
     userDiv.class = 'profile-card'
     userDiv.innerHTML = 
