@@ -58,7 +58,9 @@ document.addEventListener('DOMContentLoaded', ()=>{
                 let li = document.createElement('li')
                 li.innerText = formInput.value
                 ul.appendChild(li)
-               
+                let comment = document.getElementsByClassName('comment-input')[0]
+                comment.value = ''
+                comment.focus()
     
             }
         })

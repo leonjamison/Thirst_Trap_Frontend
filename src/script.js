@@ -24,17 +24,17 @@ document.addEventListener('click', (e)=>{
         let likes = parseInt(likeBtn.textContent[0])
         likeBtn.textContent = `${likes + 1} Likes ♥`
         // likePics()
-        fetch("http://localhost:3000/drinks", {
-            method: 'PATCH',
-            headers: 
-            {
-                'content-type': 'application/json',
-                'accept': 'application/json'
-            },
-            body: JSON.stringify({
-                likes
-            })
-        })
+        // fetch("http://localhost:3000/drinks", {
+        //     method: 'PATCH',
+        //     headers: 
+        //     {
+        //         'content-type': 'application/json',
+        //         'accept': 'application/json'
+        //     },
+        //     body: JSON.stringify({
+        //         likes
+        //     })
+        // })
         
     }else if(e.target.className === 'drink-avatar'){
         e.preventDefault()
