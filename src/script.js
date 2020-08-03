@@ -1,6 +1,6 @@
-const endPoint = `http://localhost:3000/drinks`
+const endPoint = `http://localhost:3001/drinks`
 const pic = document.getElementsByClassName('drink-avatar')
-// const reviewUrl = `http://localhost:3000/`
+// const reviewUrl = `http://localhost:3001/`
 document.addEventListener('DOMContentLoaded', ()=> {
 renderDrinks()
 // window.onload = function() {
@@ -16,7 +16,7 @@ renderDrinks()
             let likes = ++currentNum
             let id = parseInt(drink.dataset.id)
             likeBtn.textContent = `${likes} Likes ♥`
-            fetch(`http://localhost:3000/drinks/${id}`, {
+            fetch(`http://localhost:3001/drinks/${id}`, {
                 method: 'PATCH',
                 headers: 
                 {
@@ -41,7 +41,8 @@ renderDrinks()
     function renderDrinks(){
         fetch(endPoint)
         .then(resp => resp.json())
-        .then(drinks => drinks.forEach((drink)=>{
+        .then(drinks => 
+            drinks.forEach((drink)=>{
             viewDrinks(drink)
         }))
     }
@@ -57,8 +58,10 @@ renderDrinks()
         <h2>${drink.name}</h2>
         <img src=${drink.img_url} class="drink-avatar" />
         <br>
+        <hr>
         <h3>Rating: ${drink.rating}</h3>
         <button class="like-btn">${drink.likes} Likes ♥ </button> 
+        <hr>
         </div>
         `
         div.append(drinkDiv)  
@@ -72,7 +75,7 @@ renderDrinks()
 
     // function likePics(){
         
-        // fetch("http://localhost:3000/drinks", {
+        // fetch("http://localhost:3001/drinks", {
         //     method: 'PATCH',
         //     headers: 
         //     {
